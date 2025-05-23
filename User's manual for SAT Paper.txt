@@ -4,10 +4,13 @@
 Horia-Ionut Bociat
 
 
-        This file is made as a helpful guide for anyone that is analyzing the paper named “Experimental SAT Analysis. Resolution, DP and DPLL Compared”. 
+        This file is made as a helpful guide for anyone that is analyzing the paper named “Experimental SAT Analysis. 
+Resolution, DP and DPLL Compared”. 
 
 
-        Firstly, let's enumerate the components of the machine on which I did my experiments. I used a windows machine, visual studio code as an Integrated Development Environment, python 3.13.3 and some python tools: pip 3.13, matplotlib.pyplot, tracemalloc, time, seaborn, glob, os.
+        Firstly, let's enumerate the components of the machine on which I did my experiments. 
+I used a windows machine, visual studio code as an Integrated Development Environment, python 3.13.3
+and some python tools: pip 3.13, matplotlib.pyplot, tracemalloc, time, seaborn, glob, os.
 
 
         The components of my machine are:
@@ -19,10 +22,16 @@ Graphics Card        Radeon RX 580 Series (8 GB)
 System Type        64-bit operating system, x64-based processor
 
 
-I exclusively used the python tools to measure the timings and the memory allocated, I also made sure to automate all of the benchmarking so the scripts are already written in the code of each algorithm (eg. run_benchmark(), generate_formula(), benchmark(), generate_formula_param(), generate_large_formula() ).
+        I exclusively used the python tools to measure the timings and the memory allocated, I also made sure 
+to automate all of the benchmarking so the scripts are already written in the code of each algorithm 
+(eg. run_benchmark(), generate_formula(), benchmark(), generate_formula_param(), generate_large_formula() ).
 
 
-        These scripts made my work easier, they randomly generated formulas, benchmarked the algorithm and even showed a graph based on the cpu timings and memory allocated. As a consequence, these scripts provide the paper with objectivity and eliminate the human-error.
+        These scripts made my work easier, they randomly generated formulas, benchmarked the algorithm and even 
+showed a graph based on the cpu timings and memory allocated. As a consequence, these scripts provide the paper 
+with objectivity and eliminate the human-error.
 
 
-        Finally, to be able to remake my exact experiments, you would have to use the same IDE, then load the algorithm in it and change the variables in some functions (eg. num_base_vars = 100, clause_sizes = list(range(10, 1001, 20) ) to the numbers I specified in the paper and you will get my results.
+        Finally, to be able to remake my exact experiments, you would have to use the same IDE, then load the 
+algorithm in it and change the variables in some functions (eg. num_base_vars = 100, clause_sizes = list(range(10, 1001, 20) )
+to the numbers I specified in the paper and you will get my results.
